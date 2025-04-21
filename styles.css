@@ -1,141 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Elijah Kiplimo | Portfolio</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      line-height: 1.6;
-      max-width: 960px;
-      margin: 40px auto;
-      padding: 0 20px;
-      background: #f9f9f9;
-      color: #333;
-    }
-    h1, h2, h3 {
-      color: #005f73;
-    }
-    section {
-      margin-bottom: 2em;
-    }
-    hr {
-      border: none;
-      border-top: 1px solid #ccc;
-      margin: 2em 0;
-    }
-    ul {
-      padding-left: 1.2em;
-    }
-    a {
-      color: #0077cc;
-    }
-  </style>
-</head>
-<body>
-  <h1>Elijah Kiplimo</h1>
-  <p><strong>Address:</strong> 1500 W Plum St, Fort Collins, CO, 80521<br>
-  <strong>Email:</strong> <a href="mailto:Kiplimoelijah82@gmail.com">Kiplimoelijah82@gmail.com</a><br>
-  <strong>Phone:</strong> 9703910082</p>
+import React from "react";
 
-  <hr />
+export default function CV() {
+  return (
+    <div className="max-w-4xl mx-auto p-6 text-gray-800">
+      <h1 className="text-3xl font-bold mb-2">Elijah Kiplimo</h1>
+      <p className="mb-2">1500 W Plum St, Fort Collins, CO, 80521</p>
+      <p className="mb-2">Kiplimoelijah82@gmail.com | 970-391-0082</p>
 
-  <section>
-    <h2>Summary</h2>
-    <p>Innovative and results-driven engineer with a proven track record in problem-solving, dynamic solutions, and driving impactful outcomes across the energy, technology, and engineering sectors...</p>
-  </section>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Summary</h2>
+      <p className="mb-4">Innovative and results-driven engineer with a proven track record in problem-solving, dynamic solutions, and driving impactful outcomes across the energy, technology, and engineering sectors. Adept at leveraging cutting-edge engineering tools to optimize processes, enhance decision-making, and deliver solutions. Known for integrating advanced technologies, spearheading cross-functional initiatives, collaboration and developing scalable systems that improve operational efficiency and foster growth. I am a creative thinker with expertise in sensor integration, predictive analytics, oil and gas operations, and process automation. Recognized for delivering client-centered tailored solutions in competitive and complex environments.</p>
 
-  <section>
-    <h2>Experience</h2>
-    <h3>Graduate Research Assistant – METEC, Colorado State University (Aug 2023 – Present)</h3>
-    <ul>
-      <li>Developed analytical software for metal oxide methane measurement sensors...</li>
-      <li>Led the integration and development of an autonomous methane measurement unit...</li>
-      <!-- additional bullet points go here -->
-    </ul>
-    <h3>Business Analyst – Rubis Energy Kenya (Mar 2022 – Aug 2023)</h3>
-    <ul>
-      <li>Developed an innovative application for retail data gathering...</li>
-      <!-- additional bullet points go here -->
-    </ul>
-    <!-- Add other positions in similar format -->
-  </section>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Experience</h2>
+      <div className="space-y-4">
+        <div>
+          <strong>Graduate Research Assistant, METEC, Colorado State University</strong><br/>
+          Aug 2023 - Present
+          <ul className="list-disc list-inside">
+            <li>Developed analytical software for metal oxide methane measurement sensors, with integrated machine learning algorithms.</li>
+            <li>Integrated diverse methane sensors with a transfer function for improved low-cost sensor deployment accuracy.</li>
+            <li>Led QA/QC data processes and autonomous methane measurement unit development with diverse sensor technologies.</li>
+            <li>Designed novel data flow systems for weather stations and gas analyzers, improving field deployment accessibility.</li>
+            <li>Conducted field studies analyzing methane emissions using eddy covariance, aerodynamic flux gradient, and Gaussian plume inverse methods.</li>
+            <li>Documented procedures to improve reproducibility and auditability in sensor deployment research.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Business Analyst, Rubis Energy Kenya</strong><br/>
+          Mar 2022 - Aug 2023
+          <ul className="list-disc list-inside">
+            <li>Developed a retail data-gathering application with real-time analytics for marketing and trend assessment.</li>
+            <li>Built ML models for sales forecasting, site suitability assessment, and vehicle counting using image recognition.</li>
+            <li>Led a control/data management platform project, improving station operations and reporting by 60%.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Engineering & Supply Operations Intern, Lexo Energy Kenya</strong><br/>
+          Sep 2021 - Feb 2022
+          <ul className="list-disc list-inside">
+            <li>Developed custom fuel demand templates and automated analysis of fuel data trends.</li>
+            <li>Implemented Power Apps for daily data collection and decision-making processes.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Research Attaché – Geothermal Resource Management, GDC</strong><br/>
+          May 2021 - Aug 2021
+          <ul className="list-disc list-inside">
+            <li>Built geothermal well output software using Russel James Equation and developed real-time wellhead monitoring system.</li>
+            <li>Led innovation of a low-cost mini power plant using discharge fluids and flexible steam control systems.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Mechanical & Design Engineering Lead (Volunteer), AFECS Ltd</strong><br/>
+          Mar 2020 - Nov 2020
+          <ul className="list-disc list-inside">
+            <li>Led CAD, simulation, and prototyping of an electric bike, Covid-19 screening barrier, and farm dryer systems.</li>
+          </ul>
+        </div>
+        <div>
+          <strong>Intern – Engineering & Project Management, Tsavo Oilfield Services</strong><br/>
+          Sep 2021 - Feb 2022
+          <ul className="list-disc list-inside">
+            <li>Secured contracts through technical tenders and site assessments for geothermal power plant upgrades.</li>
+          </ul>
+        </div>
+      </div>
 
-  <section>
-    <h2>Education</h2>
-    <ul>
-      <li>Master of Science in Systems Engineering, Colorado State University (Expected May 2025)</li>
-      <li>Bachelor of Science in Petroleum Engineering, Kenyatta University (July 2021)</li>
-      <li>Certificate in Manufacturing, Gearbox Academy (Aug 2021)</li>
-    </ul>
-  </section>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Education</h2>
+      <ul className="list-disc list-inside">
+        <li>MSc Systems Engineering, Colorado State University, May 2025</li>
+        <li>BSc Petroleum Engineering, Kenyatta University, July 2021</li>
+        <li>Certificate in Manufacturing, Gearbox Academy, Aug 2021</li>
+      </ul>
 
-  <section>
-    <h2>Skills</h2>
-    <ul>
-      <li>Embedded Systems & Hardware: Raspberry Pi, Phidgets...</li>
-      <li>Data Analytics & Machine Learning: Python, C++, Power BI, SQL...</li>
-      <li>Design Tools: SolidWorks, AutoCAD, KiCad, Proteus</li>
-      <li>Productivity: Microsoft Office Suite, Asana, Jira, Agile Methods</li>
-    </ul>
-  </section>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Skills</h2>
+      <ul className="list-disc list-inside">
+        <li>Embedded Systems: Raspberry Pi, Signal Processing, Phidgets, I2C, SPI, UART, firmware, debugging</li>
+        <li>Data Analytics: Python, C++, ML (Colab, Azure), Power BI, SQL, MATLAB</li>
+        <li>Design: SolidWorks, AutoCAD, PCB (KiCad, Proteus)</li>
+        <li>Productivity: MS Office Suite, Asana, Jira, Trello, Agile</li>
+      </ul>
 
-  <section>
-    <h2>Certifications</h2>
-    <ul>
-      <li>Cyber Security – University of Colorado Boulder</li>
-      <li>SOLIDWORKS: Design for Mechatronics – LinkedIn</li>
-      <li>AWS Machine Learning Fundamentals – Udacity</li>
-      <li>Digital Marketing – Google Digital Garage</li>
-      <li>Project Management – Coursera (ongoing)</li>
-    </ul>
-  </section>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Certifications</h2>
+      <ul className="list-disc list-inside">
+        <li>Cyber Security (CU Boulder)</li>
+        <li>SOLIDWORKS: Design for Mechatronics</li>
+        <li>AWS ML Fundamentals</li>
+        <li>Google Digital Marketing</li>
+        <li>Project Management (Coursera – ongoing)</li>
+      </ul>
 
-  <section>
-    <h2>Publications</h2>
-    <ul>
-      <li><a href="https://www.mdpi.com/3021814">Addressing low-cost methane sensor calibration shortcomings with machine learning</a></li>
-      <li><a href="https://www.mdpi.com/2803708">Comparison of Sub-Ppm Instrument Response Suggests Higher Detection Limits...</a></li>
-      <li><a href="https://www.mdpi.com/2900376">Estimating Total Methane Emissions from the Denver-Julesburg Basin...</a></li>
-      <li><a href="https://shorturl.at/49cx">Evaluating the accuracy of downwind methods for quantifying point source emissions</a></li>
-      <li><a href="https://shorturl.at/51FpT">Design, Build and Testing of a Portable Methane Measurement Platform</a></li>
-      <li><a href="https://doi.org/10.2118/206060-MS">Development of a System for Remote Control and Monitoring of Wellheads</a></li>
-    </ul>
-  </section>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Publications</h2>
+      <ul className="list-disc list-inside">
+        <li><a href="https://www.mdpi.com/3021814" className="text-blue-600 underline">Addressing low-cost methane sensor calibration shortcomings with ML</a></li>
+        <li><a href="https://www.mdpi.com/2803708" className="text-blue-600 underline">Comparison of Sub-Ppm Instrument Response</a></li>
+        <li><a href="https://www.mdpi.com/2900376" className="text-blue-600 underline">Estimating Total Methane Emissions from DJ Basin</a></li>
+        <li><a href="https://shorturl.at/49cx" className="text-blue-600 underline">Evaluating downwind methods for emissions quantification</a></li>
+        <li><a href="https://shorturl.at/51FpT" className="text-blue-600 underline">Design and Testing of a Portable Methane Measurement Platform</a></li>
+        <li><a href="https://doi.org/10.2118/206060-MS" className="text-blue-600 underline">Remote Control and Monitoring of Wellheads</a></li>
+      </ul>
 
-  <section>
-    <h2>Awards</h2>
-    <ul>
-      <li>Youth in Extractives Award – East Africa (2021)</li>
-      <li>UN IoT for Sustainability Award</li>
-      <li>Mining 4 Impact Award (2020)</li>
-      <li>Mega Innovation & Entrepreneurship Awards (2018 & 2020)</li>
-      <li>Gearbox Hackathon Award (2018)</li>
-      <li>Energy 4 Impact Award (2018)</li>
-    </ul>
-  </section>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Awards</h2>
+      <ul className="list-disc list-inside">
+        <li>Youth in Extractives Award 2021</li>
+        <li>UN IoT for Sustainability Award</li>
+        <li>Mining 4 Impact Award 2020</li>
+        <li>Mega Innovation Award (2018 & 2020)</li>
+        <li>Gearbox Hackathon Award 2018</li>
+        <li>Energy 4 Impact Award 2018</li>
+      </ul>
 
-  <section>
-    <h2>Leadership & Extracurricular</h2>
-    <ul>
-      <li>Vice President – SPE Kenyatta University Chapter</li>
-      <li>IoT Lead – Google Sub-Saharan Africa Developer’s Clubs</li>
-      <li>Projects Leader – The Pivot Club</li>
-    </ul>
-  </section>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">Leadership & Extracurricular</h2>
+      <ul className="list-disc list-inside">
+        <li>Vice President, SPE Kenyatta University (2019) – founded technical training segment</li>
+        <li>IoT Lead – Google Sub-Saharan Africa Developer’s Clubs</li>
+        <li>Projects Leader – Pivot Club (2017-2019)</li>
+      </ul>
 
-  <section>
-    <h2>Professional References</h2>
-    <ul>
-      <li>Prof. Daniel Zimmele – Director, METEC – Dan.Zimmerle@colostate.edu</li>
-      <li>Dr. Bryan Rainwater – Research Scientist, METEC – bryan.rainwater@colostate.edu</li>
-      <li>David Mucheru – Business Analysis Manager, Rubis – David.mucheru@rubiskenya.com</li>
-      <li>Brandyn Odoyo – Automation Associate, Lexo Energy – brandynodoyo@gmail.com</li>
-      <li>Eng. George Muriga – Geothermal Development Company – gmuriga@gdc.co.ke</li>
-      <li>Eng. Elizabeth Rogo – CEO, TSAVO Oilfield Services – Elizabeth.rogo@tsavooilfieldservices.com</li>
-    </ul>
-  </section>
-
-</body>
-</html>
+      <h2 className="text-2xl font-semibold mt-6 mb-2">References</h2>
+      <ul className="list-disc list-inside">
+        <li>Prof. Daniel Zimmele – dan.zimmerle@colostate.edu</li>
+        <li>Dr. Bryan Rainwater – bryan.rainwater@colostate.edu</li>
+        <li>David Mucheru – david.mucheru@rubiskenya.com</li>
+        <li>Brandyn Odoyo – brandynodoyo@gmail.com</li>
+        <li>Eng. George Muriga – gmuriga@gdc.co.ke</li>
+        <li>Eng. Elizabeth Rogo – elizabeth.rogo@tsavooilfieldservices.com</li>
+      </ul>
+    </div>
+  );
+}
