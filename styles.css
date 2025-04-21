@@ -7,6 +7,14 @@ export default function CV() {
       <p className="mb-2">1500 W Plum St, Fort Collins, CO, 80521</p>
       <p className="mb-2">Kiplimoelijah82@gmail.com | 970-391-0082</p>
 
+      <a
+        href="/Elijah_Kiplimo_CV.pdf"
+        download
+        className="inline-block bg-blue-600 text-white px-4 py-2 rounded mt-2 hover:bg-blue-700 transition"
+      >
+        Download CV (PDF)
+      </a>
+
       <h2 className="text-2xl font-semibold mt-6 mb-2">Summary</h2>
       <p className="mb-4">Innovative and results-driven engineer with a proven track record in problem-solving, dynamic solutions, and driving impactful outcomes across the energy, technology, and engineering sectors. Adept at leveraging cutting-edge engineering tools to optimize processes, enhance decision-making, and deliver solutions. Known for integrating advanced technologies, spearheading cross-functional initiatives, collaboration and developing scalable systems that improve operational efficiency and foster growth. I am a creative thinker with expertise in sensor integration, predictive analytics, oil and gas operations, and process automation. Recognized for delivering client-centered tailored solutions in competitive and complex environments.</p>
 
