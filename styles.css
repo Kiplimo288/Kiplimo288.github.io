@@ -4,7 +4,7 @@ export default function CV() {
   return (
     <div className="max-w-4xl mx-auto p-6 text-gray-800">
       <h1 className="text-3xl font-bold mb-2">Elijah Kiplimo</h1>
-      <p className="mb-2">1500 W  Plum St, Fort Collins, CO, 80521</p>
+      <p className="mb-2">1500 W Plum St, Fort Collins, CO, 80521</p>
       <p className="mb-2">Kiplimoelijah82@gmail.com | 970-391-0082</p>
 
       <h2 className="text-2xl font-semibold mt-6 mb-2">Summary</h2>
