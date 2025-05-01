@@ -1,138 +1,206 @@
-import React from "react";
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+    --text-color: #333;
+    --text-light: #7f8c8d;
+}
 
-export default function CV() {
-  return (
-    <div className="max-w-4xl mx-auto p-6 text-gray-800">
-      <h1 className="text-3xl font-bold mb-2">Elijah Kiplimo</h1>
-      <p className="mb-2">1500 W Plum St, Fort Collins, CO, 80521</p>
-      <p className="mb-2">Kiplimoelijah82@gmail.com | 970-391-0082</p>
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
 
-      <a
-        href="/Elijah_Kiplimo_CV.pdf"
-        download
-        className="inline-block bg-blue-600 text-white px-4 py-2 rounded mt-2 hover:bg-blue-700 transition"
-      >
-        Download CV (PDF)
-      </a>
+.cv-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Summary</h2>
-      <p className="mb-4">Innovative and results-driven engineer with a proven track record in problem-solving, dynamic solutions, and driving impactful outcomes across the energy, technology, and engineering sectors. Adept at leveraging cutting-edge engineering tools to optimize processes, enhance decision-making, and deliver solutions. Known for integrating advanced technologies, spearheading cross-functional initiatives, collaboration and developing scalable systems that improve operational efficiency and foster growth. I am a creative thinker with expertise in sensor integration, predictive analytics, oil and gas operations, and process automation. Recognized for delivering client-centered tailored solutions in competitive and complex environments.</p>
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Experience</h2>
-      <div className="space-y-4">
-        <div>
-          <strong>Graduate Research Assistant, METEC, Colorado State University</strong><br/>
-          Aug 2023 - Present
-          <ul className="list-disc list-inside">
-            <li>Developed analytical software for metal oxide methane measurement sensors, with integrated machine learning algorithms.</li>
-            <li>Integrated diverse methane sensors with a transfer function for improved low-cost sensor deployment accuracy.</li>
-            <li>Led QA/QC data processes and autonomous methane measurement unit development with diverse sensor technologies.</li>
-            <li>Designed novel data flow systems for weather stations and gas analyzers, improving field deployment accessibility.</li>
-            <li>Conducted field studies analyzing methane emissions using eddy covariance, aerodynamic flux gradient, and Gaussian plume inverse methods.</li>
-            <li>Documented procedures to improve reproducibility and auditability in sensor deployment research.</li>
-          </ul>
-        </div>
-        <div>
-          <strong>Business Analyst, Rubis Energy Kenya</strong><br/>
-          Mar 2022 - Aug 2023
-          <ul className="list-disc list-inside">
-            <li>Developed a retail data-gathering application with real-time analytics for marketing and trend assessment.</li>
-            <li>Built ML models for sales forecasting, site suitability assessment, and vehicle counting using image recognition.</li>
-            <li>Led a control/data management platform project, improving station operations and reporting by 60%.</li>
-          </ul>
-        </div>
-        <div>
-          <strong>Engineering & Supply Operations Intern, Lexo Energy Kenya</strong><br/>
-          Sep 2021 - Feb 2022
-          <ul className="list-disc list-inside">
-            <li>Developed custom fuel demand templates and automated analysis of fuel data trends.</li>
-            <li>Implemented Power Apps for daily data collection and decision-making processes.</li>
-          </ul>
-        </div>
-        <div>
-          <strong>Research Attaché – Geothermal Resource Management, GDC</strong><br/>
-          May 2021 - Aug 2021
-          <ul className="list-disc list-inside">
-            <li>Built geothermal well output software using Russel James Equation and developed real-time wellhead monitoring system.</li>
-            <li>Led innovation of a low-cost mini power plant using discharge fluids and flexible steam control systems.</li>
-          </ul>
-        </div>
-        <div>
-          <strong>Mechanical & Design Engineering Lead (Volunteer), AFECS Ltd</strong><br/>
-          Mar 2020 - Nov 2020
-          <ul className="list-disc list-inside">
-            <li>Led CAD, simulation, and prototyping of an electric bike, Covid-19 screening barrier, and farm dryer systems.</li>
-          </ul>
-        </div>
-        <div>
-          <strong>Intern – Engineering & Project Management, Tsavo Oilfield Services</strong><br/>
-          Sep 2021 - Feb 2022
-          <ul className="list-disc list-inside">
-            <li>Secured contracts through technical tenders and site assessments for geothermal power plant upgrades.</li>
-          </ul>
-        </div>
-      </div>
+.hero-title {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Education</h2>
-      <ul className="list-disc list-inside">
-        <li>MSc Systems Engineering, Colorado State University, May 2025</li>
-        <li>BSc Petroleum Engineering, Kenyatta University, July 2021</li>
-        <li>Certificate in Manufacturing, Gearbox Academy, Aug 2021</li>
-      </ul>
+.hero-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: 300;
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Skills</h2>
-      <ul className="list-disc list-inside">
-        <li>Embedded Systems: Raspberry Pi, Signal Processing, Phidgets, I2C, SPI, UART, firmware, debugging</li>
-        <li>Data Analytics: Python, C++, ML (Colab, Azure), Power BI, SQL, MATLAB</li>
-        <li>Design: SolidWorks, AutoCAD, PCB (KiCad, Proteus)</li>
-        <li>Productivity: MS Office Suite, Asana, Jira, Trello, Agile</li>
-      </ul>
+.contact-info {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Certifications</h2>
-      <ul className="list-disc list-inside">
-        <li>Cyber Security (CU Boulder)</li>
-        <li>SOLIDWORKS: Design for Mechatronics</li>
-        <li>AWS ML Fundamentals</li>
-        <li>Google Digital Marketing</li>
-        <li>Project Management (Coursera – ongoing)</li>
-      </ul>
+.contact-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Publications</h2>
-      <ul className="list-disc list-inside">
-        <li><a href="https://www.mdpi.com/3021814" className="text-blue-600 underline">Addressing low-cost methane sensor calibration shortcomings with ML</a></li>
-        <li><a href="https://www.mdpi.com/2803708" className="text-blue-600 underline">Comparison of Sub-Ppm Instrument Response</a></li>
-        <li><a href="https://www.mdpi.com/2900376" className="text-blue-600 underline">Estimating Total Methane Emissions from DJ Basin</a></li>
-        <li><a href="https://shorturl.at/49cx" className="text-blue-600 underline">Evaluating downwind methods for emissions quantification</a></li>
-        <li><a href="https://shorturl.at/51FpT" className="text-blue-600 underline">Design and Testing of a Portable Methane Measurement Platform</a></li>
-        <li><a href="https://doi.org/10.2118/206060-MS" className="text-blue-600 underline">Remote Control and Monitoring of Wellheads</a></li>
-      </ul>
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Awards</h2>
-      <ul className="list-disc list-inside">
-        <li>Youth in Extractives Award 2021</li>
-        <li>UN IoT for Sustainability Award</li>
-        <li>Mining 4 Impact Award 2020</li>
-        <li>Mega Innovation Award (2018 & 2020)</li>
-        <li>Gearbox Hackathon Award 2018</li>
-        <li>Energy 4 Impact Award 2018</li>
-      </ul>
+.contact-btn {
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">Leadership & Extracurricular</h2>
-      <ul className="list-disc list-inside">
-        <li>Vice President, SPE Kenyatta University (2019) – founded technical training segment</li>
-        <li>IoT Lead – Google Sub-Saharan Africa Developer’s Clubs</li>
-        <li>Projects Leader – Pivot Club (2017-2019)</li>
-      </ul>
+.contact-btn:hover {
+    background-color: white;
+    color: var(--primary-color);
+}
 
-      <h2 className="text-2xl font-semibold mt-6 mb-2">References</h2>
-      <ul className="list-disc list-inside">
-        <li>Prof. Daniel Zimmele – dan.zimmerle@colostate.edu</li>
-        <li>Dr. Bryan Rainwater – bryan.rainwater@colostate.edu</li>
-        <li>David Mucheru – david.mucheru@rubiskenya.com</li>
-        <li>Brandyn Odoyo – brandynodoyo@gmail.com</li>
-        <li>Eng. George Muriga – gmuriga@gdc.co.ke</li>
-        <li>Eng. Elizabeth Rogo – elizabeth.rogo@tsavooilfieldservices.com</li>
-      </ul>
-    </div>
-  );
+/* Main Content */
+.main-content {
+    padding: 2rem;
+}
+
+.section {
+    margin-bottom: 3rem;
+}
+
+.section-title {
+    font-size: 2rem;
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--light-color);
+}
+
+/* Experience Section */
+.experience-item {
+    margin-bottom: 2.5rem;
+}
+
+.experience-item h3 {
+    font-size: 1.3rem;
+    margin: 0 0 0.3rem 0;
+    color: var(--dark-color);
+}
+
+.experience-meta {
+    color: var(--text-light);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* Skills Section */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.skill-category h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* Achievements Section */
+.achievements-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.achievement-card {
+    background-color: var(--light-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+
+.achievement-card h3 {
+    color: var(--primary-color);
+    margin-top: 0;
+}
+
+/* Contact Section */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.contact-form button {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.2rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
