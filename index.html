@@ -128,14 +128,37 @@
             </section>
 
             <section id="contact" class="section contact-section">
-                <h2 class="section-title">Contact Me</h2>
-                <form class="contact-form" action="https://formspree.io/f/https://formspree.io/f/xjkwybaq" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit">Send Message</button>
-                </form>
-            </section>
+    <h2 class="section-title">Contact Me</h2>
+    <form 
+        class="contact-form" 
+        action="https://formspree.io/f/xjkw0baq" 
+        method="POST"
+    >
+        <!-- Hidden Subject Field -->
+        <input type="hidden" name="_subject" value="New message from Elijah's Portfolio">
+        
+        <!-- Name Field -->
+        <label>
+            Your Name:
+            <input type="text" name="name" required>
+        </label>
+        
+        <!-- Email Field -->
+        <label>
+            Your Email:
+            <input type="email" name="email" required>
+        </label>
+        
+        <!-- Message Field -->
+        <label>
+            Your Message:
+            <textarea name="message" required></textarea>
+        </label>
+        
+        <!-- Submit Button -->
+        <button type="submit">Send Message</button>
+    </form>
+</section>
         </main>
 
         <footer class="footer">
