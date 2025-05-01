@@ -1,293 +1,141 @@
-/* Base Styles */
-:root {
-  --primary-color: #2c3e50;
-  --secondary-color: #3498db;
-  --accent-color: #e74c3c;
-  --light-color: #ecf0f1;
-  --dark-color: #2c3e50;
-  --text-color: #333;
-  --text-light: #7f8c8d;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elijah Kiplimo - Engineer & Data Scientist</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cv-container">
+        <header class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Elijah Kiplimo</h1>
+                <h2 class="hero-subtitle">Systems Engineer | Data Scientist | Energy Innovator</h2>
+                <div class="contact-info">
+                    <p>📍 1500 W Plum St, Fort Collins, CO, 80521</p>
+                    <p>📧 Kiplimoelijah82@gmail.com</p>
+                    <p>📞 970-391-0082</p>
+                </div>
+                <div class="action-buttons">
+                    <a href="#contact" class="contact-btn">Contact Me</a>
+                </div>
+            </div>
+        </header>
 
-body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  line-height: 1.6;
-  color: var(--text-color);
-  background-color: #f9f9f9;
-  margin: 0;
-  padding: 0;
-}
+        <main class="main-content">
+            <section class="section">
+                <h2 class="section-title">Professional Profile</h2>
+                <div class="section-content">
+                    <p>Innovative and results-driven engineer with expertise in sensor integration, machine learning, and energy systems optimization. Proven track record of developing cutting-edge solutions that improve operational efficiency and sustainability.</p>
+                </div>
+            </section>
 
-.cv-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: white;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
+            <section class="section">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-item">
+                    <h3>Graduate Research Assistant</h3>
+                    <p class="experience-meta">METEC, Colorado State University | Aug 2023 - Present</p>
+                    <ul>
+                        <li>Developed machine learning algorithms for methane sensors, improving accuracy by 40%</li>
+                        <li>Led development of autonomous methane measurement unit with multiple sensor technologies</li>
+                        <li>Designed data flow systems that reduced processing time by 30%</li>
+                    </ul>
+                </div>
 
-/* Hero Section */
-.hero-section {
-  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-  color: white;
-  padding: 3rem 2rem;
-  text-align: center;
-}
+                <div class="experience-item">
+                    <h3>Business Analyst</h3>
+                    <p class="experience-meta">Rubis Energy Kenya | Mar 2022 - Aug 2023</p>
+                    <ul>
+                        <li>Built ML sales forecasting models with 92% accuracy</li>
+                        <li>Developed retail analytics platform improving decision speed by 65%</li>
+                        <li>Created computer vision solution for vehicle counting</li>
+                    </ul>
+                </div>
 
-.hero-content {
-  max-width: 800px;
-  margin: 0 auto;
-}
+                <div class="experience-item">
+                    <h3>Research Attaché – Geothermal</h3>
+                    <p class="experience-meta">Geothermal Development Company | May 2021 - Aug 2021</p>
+                    <ul>
+                        <li>Developed well output modeling software improving forecasts by 25%</li>
+                        <li>Designed IoT wellhead monitoring system reducing field trips by 40%</li>
+                    </ul>
+                </div>
+            </section>
 
-.hero-title {
-  font-size: 3rem;
-  margin-bottom: 0.5rem;
-  font-weight: 700;
-}
+            <section class="section">
+                <h2 class="section-title">Education</h2>
+                <div class="education-item">
+                    <h3>Master of Science in Systems Engineering</h3>
+                    <p class="education-meta">Colorado State University | Expected May 2025</p>
+                </div>
+                <div class="education-item">
+                    <h3>Bachelor of Science in Petroleum Engineering</h3>
+                    <p class="education-meta">Kenyatta University | July 2021</p>
+                </div>
+            </section>
 
-.hero-subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 1.5rem;
-  font-weight: 300;
-}
+            <section class="section">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Technical</h3>
+                        <ul>
+                            <li>Python, C++, MATLAB</li>
+                            <li>Machine Learning (Azure, Colab)</li>
+                            <li>SolidWorks, AutoCAD</li>
+                            <li>Raspberry Pi, IoT</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Professional</h3>
+                        <ul>
+                            <li>Data Analysis</li>
+                            <li>Project Management</li>
+                            <li>Technical Documentation</li>
+                            <li>Cross-functional Leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-.contact-info {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin-bottom: 2rem;
-  flex-wrap: wrap;
-}
+            <section class="section">
+                <h2 class="section-title">Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <h3>Awards</h3>
+                        <ul>
+                            <li>2021 Youth in Extractives Award</li>
+                            <li>UN IoT for Sustainability Award</li>
+                            <li>Mining4Impact Award 2020</li>
+                            <li>Mega Innovation Award (2018 & 2020)</li>
+                        </ul>
+                    </div>
+                    <div class="achievement-card">
+                        <h3>Publications</h3>
+                        <ul>
+                            <li><a href="https://www.mdpi.com/3021814" target="_blank">ML for Methane Sensor Calibration</a></li>
+                            <li><a href="https://www.mdpi.com/2803708" target="_blank">Methane Instrument Response</a></li>
+                            <li><a href="https://shorturl.at/51FpT" target="_blank">Portable Methane Platform</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
 
-.contact-info p {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0;
-}
+            <section id="contact" class="section contact-section">
+                <h2 class="section-title">Contact Me</h2>
+                <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit">Send Message</button>
+                </form>
+            </section>
+        </main>
 
-.action-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  margin-top: 1.5rem;
-}
-
-.download-btn, .contact-btn {
-  padding: 0.8rem 1.5rem;
-  border-radius: 4px;
-  font-weight: 600;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.download-btn {
-  background-color: var(--accent-color);
-  color: white;
-  border: 2px solid var(--accent-color);
-}
-
-.download-btn:hover {
-  background-color: transparent;
-  color: white;
-}
-
-.contact-btn {
-  background-color: transparent;
-  color: white;
-  border: 2px solid white;
-}
-
-.contact-btn:hover {
-  background-color: white;
-  color: var(--primary-color);
-}
-
-/* Main Content */
-.main-content {
-  padding: 2rem;
-}
-
-.section {
-  margin-bottom: 3rem;
-}
-
-.section-title {
-  font-size: 2rem;
-  color: var(--primary-color);
-  margin-bottom: 1.5rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 2px solid var(--light-color);
-}
-
-/* Experience Section */
-.experience-item {
-  margin-bottom: 2.5rem;
-}
-
-.experience-header {
-  margin-bottom: 1rem;
-}
-
-.experience-header h3 {
-  font-size: 1.3rem;
-  margin: 0;
-  color: var(--dark-color);
-}
-
-.experience-meta {
-  display: flex;
-  justify-content: space-between;
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-top: 0.3rem;
-}
-
-.experience-details {
-  padding-left: 1.5rem;
-}
-
-.experience-details li {
-  margin-bottom: 0.5rem;
-}
-
-/* Grid Layouts */
-.expertise-grid, .skills-grid, .achievements-grid, .leadership-grid, .highlights-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.expertise-item, .skill-category, .achievement-card, .leadership-item, .highlight-card {
-  background-color: var(--light-color);
-  padding: 1.5rem;
-  border-radius: 6px;
-  transition: transform 0.3s ease;
-}
-
-.expertise-item:hover, .skill-category:hover, .achievement-card:hover, 
-.leadership-item:hover, .highlight-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.expertise-item {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.expertise-icon {
-  font-size: 1.5rem;
-}
-
-.skill-category h3, .achievement-card h3, .leadership-item h3, .highlight-card h4 {
-  color: var(--primary-color);
-  margin-top: 0;
-  margin-bottom: 1rem;
-}
-
-.skill-category ul, .achievement-card ul {
-  padding-left: 1.2rem;
-}
-
-.skill-category li, .achievement-card li {
-  margin-bottom: 0.5rem;
-}
-
-/* Education Section */
-.education-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 1.5rem;
-}
-
-.education-item {
-  border-left: 3px solid var(--secondary-color);
-  padding-left: 1.5rem;
-}
-
-.education-item h3 {
-  margin-top: 0;
-  color: var(--dark-color);
-}
-
-.education-meta {
-  color: var(--text-light);
-  font-size: 0.9rem;
-  margin-bottom: 0.5rem;
-}
-
-/* Footer */
-.footer {
-  background-color: var(--primary-color);
-  color: white;
-  padding: 2rem;
-  text-align: center;
-}
-
-.footer h3 {
-  margin-top: 0;
-}
-
-.social-links {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  margin: 1.5rem 0;
-}
-
-.social-links a {
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-  color: var(--secondary-color);
-}
-
-.copyright {
-  margin-bottom: 0;
-  font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.7);
-}
-
-/* Links */
-a {
-  color: var(--secondary-color);
-  text-decoration: none;
-  transition: color 0.3s ease;
-}
-
-a:hover {
-  color: var(--accent-color);
-}
-
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-  .hero-title {
-    font-size: 2.2rem;
-  }
-  
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-  
-  .contact-info {
-    flex-direction: column;
-    gap: 0.5rem;
-    align-items: center;
-  }
-  
-  .action-buttons {
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .download-btn, .contact-btn {
-    width: 100%;
-    max-width: 250px;
-    text-align: center;
-  }
-}
+        <footer class="footer">
+            <p>© <script>document.write(new Date().getFullYear())</script> Elijah Kiplimo</p>
+        </footer>
+    </div>
+</body>
+</html>
